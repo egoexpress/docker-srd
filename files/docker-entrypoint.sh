@@ -10,3 +10,4 @@ fi
 echo "  site_url: $SRK_KNOWN_URL" >> /root/.sifttter-redux
 echo "  username: $SRK_KNOWN_USER" >> /root/.sifttter-redux
 echo "  api_key: $SRK_KNOWN_API_KEY" >> /root/.sifttter-redux
+echo "OAUTH_ACCESS_TOKEN=${SRK_DROPBOX_TOKEN}" >> /root/.dropbox_uploader
