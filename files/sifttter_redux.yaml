@@ -1,0 +1,10 @@
+---
+sifttter_redux:
+  config_location: "/root/.sifttter_redux"
+  log_level: WARN
+  version: '1.0'
+  sifttter_local_filepath: "/tmp/sifttter"
+  sifttter_remote_filepath: "/Apps/Sifttter"
+  local_filepath: "/tmp/sifttter-redux-known"
+known:
+  visibility: member

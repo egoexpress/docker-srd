@@ -1,0 +1,8 @@
+srk:
+  container_name: srk
+  image: egoexpress/srk:latest
+  restart: on-failure:10
+  environment:
+    - SRK_KNOWN_URL=${DOCKER_SRK_KNOWN_URL}
+    - SRK_KNOWN_USER=${DOCKER_SRK_KNOWN_USER}
+    - SRK_KNOWN_API_KEY=${DOCKER_SRK_KNOWN_API_KEY}

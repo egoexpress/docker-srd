@@ -18,3 +18,9 @@ RUN mkdir /usr/local/opt
 WORKDIR "/usr/local/opt"
 RUN ["/usr/bin/git", "clone", "https://github.com/andreafabrizi/Dropbox-Uploader.git"]
 
+# prepare base config for sifttter-redux-known
+COPY files/sifttter-redux.conf /root/.sifttter-redux
+RUN mkdir /tmp/sifttter-redux-known && mkdir /tmp/sifttter
+
+# setup entrypoint
+COPY files/docker-entrypoint.sh /docker-entrypoint.sh
