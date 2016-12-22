@@ -6,5 +6,7 @@ sifttter_redux:
   sifttter_local_filepath: "/tmp/sifttter"
   sifttter_remote_filepath: "/Apps/Sifttter"
   local_filepath: "/tmp/sifttter-redux-known"
+db_uploader:
+  exe_filepath: /usr/local/opt/Dropbox-Uploader/dropbox_uploader.sh
 known:
   visibility: member
