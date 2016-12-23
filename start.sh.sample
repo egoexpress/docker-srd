@@ -1,0 +1,16 @@
+#!/bin/bash
+
+# Known site URL
+export DOCKER_SRK_KNOWN_URL="https://known.example.com"
+
+# Known username
+export DOCKER_SRK_KNOWN_USER="knownuser"
+
+# Known API key (find it at "Account Settings/Tools and Apps"
+export DOCKER_SRK_KNOWN_API_KEY="xxxxxxxxxxxxxx"
+
+# Dropbox API token (you have to create a Dropbox API for that)
+export DOCKER_SRK_DROPBOX_TOKEN="xxxxxxxxxxxxxx"
+
+docker-compose up -d
+
