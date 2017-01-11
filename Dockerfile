@@ -19,13 +19,14 @@ RUN ["/usr/bin/git", "clone", "https://github.com/andreafabrizi/Dropbox-Uploader
 COPY files/sifttter_redux.yaml /root/.sifttter_redux
 RUN mkdir /tmp/sifttter-redux-known && mkdir /tmp/sifttter
 
-# change default encoding to UTF-8
+# change default encoding to UTF-8 and install cron
 RUN apt-get update && \
-    apt-get install locales && \
+    apt-get install -yq --no-install-recommends locales cron && \
     echo "en_US.UTF-8 UTF-8" > /etc/locale.gen && \
     locale-gen
 
 COPY files/bashrc /root/.bashrc
+COPY files/crontab /etc/crontab
 WORKDIR "/"
 
 # setup entrypoint

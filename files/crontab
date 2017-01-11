@@ -1,0 +1,7 @@
+# /etc/crontab: system-wide crontab
+
+SHELL=/bin/sh
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+
+# run sifttter-redux-known at 2AM and create an entry for yesterday
+0 2    * * *   root    /usr/local/bundle/bin/srd exec -y
