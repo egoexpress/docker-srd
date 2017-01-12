@@ -1,7 +1,10 @@
 # /etc/crontab: system-wide crontab
 
 SHELL=/bin/sh
-PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin
+PATH=/usr/local/sbin:/usr/local/bin:/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bundle/bin
+
+# set Ruby gem environment
+GEM_PATH=/usr/local/bundle:/usr/local/lib/ruby/gems/2.3.0
 
 # run sifttter-redux-known at 2AM and create an entry for yesterday
-0 2    * * *   root    /usr/local/bundle/bin/srd exec -y
+00 02    * * *   root    /bin/bash -c 'source /root/.bashrc && srd exec -y >/var/log/srd.log 2>&1'

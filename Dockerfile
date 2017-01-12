@@ -1,7 +1,7 @@
 FROM ruby:2.3
 
 MAINTAINER Bjoern Stierand <bjoern-github@innovention.de>
-LABEL version="0.2"
+LABEL version="0.3"
 LABEL description="Docker image for sifttter-redux-known"
 
 # install sifttter-redux-known
