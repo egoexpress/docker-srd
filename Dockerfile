@@ -1,7 +1,7 @@
-FROM ruby:2.3
+FROM ruby:2.4
 
 MAINTAINER Bjoern Stierand <bjoern-github@innovention.de>
-LABEL version="0.3"
+LABEL version="0.4"
 LABEL description="Docker image for sifttter-redux-known"
 
 # install sifttter-redux-known
@@ -33,3 +33,4 @@ WORKDIR "/"
 COPY files/docker-entrypoint.sh /docker-entrypoint.sh
 RUN chmod 555 /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
+
