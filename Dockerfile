@@ -34,3 +34,6 @@ COPY files/docker-entrypoint.sh /docker-entrypoint.sh
 RUN chmod 555 /docker-entrypoint.sh
 ENTRYPOINT ["/docker-entrypoint.sh"]
 
+COPY files/srd_run /usr/bin/srd_run
+RUN chmod 755 /usr/bin/srd_run
+CMD ["/usr/bin/srd_run"]
